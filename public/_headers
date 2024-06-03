@@ -2,4 +2,4 @@
   Strict-Transport-Security: max-age=15768000
   Content-Security-Policy: frame-ancestors 'none'
   X-Frame-Options: DENY
-  Content-Security-Policy: default-src https:
+  Content-Security-Policy: default-src 'self'; object-src 'none'
