@@ -1,0 +1,35 @@
+---
+import "../styles/global.css";
+import { Activity, Briefcase, Cake, MapPin, User } from "lucide-astro";
+---
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mkrbs.de | Home</title>
+  </head>
+  <body>
+    <div>
+      <h1>
+        Hello
+        <span style="font-size:50px;">&#128075;</span>
+      </h1>
+      <p>Some things about me:</p>
+      <ul>
+        <li><User /> Michael</li>
+        <li><Cake />21</li>
+        <li><MapPin />Germany (Bavaria)</li>
+        <li><Briefcase />DevOps Engineer</li>
+        <li>
+          <Activity />servers, software, volleyball, travel (nature)
+        </li>
+      </ul>
+      <p class="ref-gh">
+        Visit <a href="https://github.com/m-krebs">my GitHub</a>
+        and check out what I am working on.
+      </p>
+    </div>
+  </body>
+</html>
