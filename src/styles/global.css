@@ -57,7 +57,11 @@ h1 {
 }
 
 .ref-gh {
-  color: #888;
+  color: #9A9996;
+
+}
+.ref-gh > a {
+  color: #83B1ED;
 }
 
 button {
@@ -89,6 +93,13 @@ button:focus-visible {
 
   a:hover {
     color: #747bff;
+  }
+
+  .ref-gh {
+    color: #383838
+  }
+  .ref-gh > a {
+    color: #0053AD;
   }
 
   button {
