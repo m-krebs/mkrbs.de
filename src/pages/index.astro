@@ -1,6 +1,10 @@
 ---
 import "../styles/global.css";
 import { Activity, Briefcase, Cake, MapPin, User } from "lucide-astro";
+
+const response = await fetch("https://api.thesenior.dev/me");
+const data = await response.json();
+const age = data.age;
 ---
 
 <html lang="en">
@@ -22,7 +26,7 @@ import { Activity, Briefcase, Cake, MapPin, User } from "lucide-astro";
       <p>Some things about me:</p>
       <ul>
         <li><User /> Michael</li>
-        <li><Cake />21</li>
+        <li><Cake />{age}</li>
         <li><MapPin />Germany (Bavaria)</li>
         <li><Briefcase />DevOps Engineer</li>
         <li>
